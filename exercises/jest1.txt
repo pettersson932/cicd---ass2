@@ -1,0 +1,27 @@
+Övningar med Jest
+Instruktioner
+I nedan övningar ska du skriva både testfall och implementera logiken i JS.
+
+Skriv testfall till funktionen multiply(x, y), som tar två tal som parametrar. Funktionen multiplicerar dessa två tal och returnerar summan. Ifall något annat än siffror skickas in ska ett felmeddelande returneras. Exempel: multiply(2, 5) === 10
+
+Skriv testfall till funktionen capitalize(text), som ska ta en sträng som parameter och göra första tecknet till en stor bokstav. Ifall en tom sträng skickas in ska ett felmeddelande returneras. Exempel: capitalize('pelle') === 'Pelle'
+
+Skriv en funktion som gör om ett heltal till ett romerskt tal. Observera att det viktigaste inte är att "lösa problemet" utan att skriva testfall! https://en.wikipedia.org/wiki/Roman_numerals
+
+    // Returns the parameter number as a string of roman numerals
+    // The function should be able to handle numbers between 1 and 14
+    intToRoman(number);
+
+    // Returns the integer represented by the parameter roman numeral string
+    romanToInt(romanNumeral);  // extrauppgift
+
+    // Example usage
+    let one = intToRoman(1);   // 'I'
+    let two = intToRoman(2);   // 'II'
+    let five = intToRoman(5);  // 'V'
+    let four = intToRoman(4);   // 'IV' → 4 === 5 - 1
+    let nine   = intToRoman(9);    // 'IX'
+    let ten    = intToRoman(10);   // 'X'
+    let eleven = intToRoman(11);   // 'XI'
+    let fourteen = intToRoman(14);   // 'XIV'
+Att tänka på: Vilka är möjliga värden på parametern? Vilka är möjliga returvärden? Ska funktionen kunna kasta fel?
